@@ -1,0 +1,89 @@
+body{
+    background: url(background.jpg);
+    background-size: cover;
+}
+.sun{
+    width: 150px;
+    height: 150px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-size: 500px;
+    box-shadow: -4px 2px 56px #f9c05f;
+}
+.earth{
+    width: 50px;
+    height: 50px;
+    background-image: url(earth.jpeg);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    background-size: 50px;
+    box-shadow: inset 0px 0px 5px #FDFfF29E,
+                inset 3px 0px 5px #000;
+    animation: rotate 10s infinite linear;
+}
+@keyframes rotate{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 500px;
+    }
+}
+.orbit1{
+    width: 350px;
+    height: 350px;
+    border: 1px solid #FDFfF29E;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate-3 10s infinite linear;
+}
+@keyframes rotate-3{
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.orbit2{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #FDFfF29E;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate-4 4s infinite linear;
+}
+@keyframes rotate-4{
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.moon{
+    width: 15px;
+    height: 15px;
+    background: url(moon.jpeg);
+    border-radius: 50%;
+    background-size: 20px;
+    box-shadow: inset 0px 0px 5px #FDFfF29E;
+    position: absolute;
+    top: 15px;
+    animation: rotate-2 30s infinite linear;
+}
+@keyframes rotate-2{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 500px;
+    }
+}
